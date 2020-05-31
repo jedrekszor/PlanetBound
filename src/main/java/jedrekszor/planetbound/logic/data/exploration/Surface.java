@@ -1,0 +1,270 @@
+package jedrekszor.planetbound.logic.data.exploration;
+
+import javafx.beans.property.*;
+import jedrekszor.planetbound.logic.Dice;
+import jedrekszor.planetbound.logic.Singleton;
+import jedrekszor.planetbound.logic.data.exploration.aliens.Alien;
+import jedrekszor.planetbound.logic.data.exploration.aliens.AlienFactory;
+import jedrekszor.planetbound.logic.data.resources.Resource;
+import jedrekszor.planetbound.logic.data.resources.ResourceFactory;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Surface{
+    private static int xSize = 6;
+    private static int ySize = 6;
+
+    private IntegerProperty alienX = new SimpleIntegerProperty();
+    private IntegerProperty alienY = new SimpleIntegerProperty();
+    private StringProperty alienColor = new SimpleStringProperty();
+
+    public int getAlienX() {
+        return alienX.get();
+    }
+    public IntegerProperty alienXProperty() {
+        return alienX;
+    }
+    public void setAlienX(int alienX) {
+        this.alienX.set(alienX);
+    }
+
+    public int getAlienY() {
+        return alienY.get();
+    }
+    public IntegerProperty alienYProperty() {
+        return alienY;
+    }
+    public void setAlienY(int alienY) {
+        this.alienY.set(alienY);
+    }
+
+    public String getAlienColor() {
+        return alienColor.get();
+    }
+    public StringProperty alienColorProperty() {
+        return alienColor;
+    }
+    public void setAlienColor(String alienColor) {
+        this.alienColor.set(alienColor);
+    }
+
+    private BooleanProperty running = new SimpleBooleanProperty();
+    public boolean isRunning() {
+        return running.get();
+    }
+    public BooleanProperty runningProperty() {
+        return running;
+    }
+    public void setRunning(boolean running) {
+        this.running.set(running);
+    }
+
+    private String resourceColor;
+    public String getResourceColor() {
+        return resourceColor;
+    }
+    public void setResourceColor(String resourceColor) {
+        this.resourceColor = resourceColor;
+    }
+
+    private Drone drone;
+    private Alien alien;
+    private boolean success;
+    public boolean getSuccess() {
+        return success;
+    }
+
+    private Coordinates landingLocation = new Coordinates();
+    private Coordinates resourceLocation = new Coordinates();
+
+    public Surface() {
+        setRunning(true);
+        drone = Singleton.getInstance().getShip().getDrone();
+        drone.returning = false;
+        alien = (AlienFactory.getRandomAlien(
+                Singleton.getInstance().getCurrentPlanet().hasBlack(),
+                Singleton.getInstance().getCurrentPlanet().hasBlue(),
+                Singleton.getInstance().getCurrentPlanet().hasGreen(),
+                Singleton.getInstance().getCurrentPlanet().hasRed()));
+        setLocations();
+        setAlienX(alien.getCoordinates().getX());
+        setAlienY(alien.getCoordinates().getY());
+        setAlienColor(alien.getColor());
+        System.out.println("New " + getAlienColor() + " alien");
+        setResourceColor(ResourceFactory.getRandomResource(Singleton.getInstance().getCurrentPlanet().hasBlack(),
+                    Singleton.getInstance().getCurrentPlanet().hasBlue(),
+                    Singleton.getInstance().getCurrentPlanet().hasGreen(),
+                    Singleton.getInstance().getCurrentPlanet().hasRed(),
+                    Singleton.getInstance().getCurrentPlanet().hasArtefact()).getColor());
+        System.out.println(resourceColor + " resource");
+    }
+
+    private void setLocations() {
+        int randX = (int)(Math.random() * getXSize());
+        int randY = (int)(Math.random() * getYSize());
+        landingLocation.setCoordinates(randX, randY);
+        int rX, rY;
+        do {
+            rX = (int)(Math.random() * getXSize());
+            rY = (int)(Math.random() * getYSize());
+        } while (rX == randX && rY == randY);
+        resourceLocation.setCoordinates(rX, rY);
+        drone.getCoordinates().setCoordinates(landingLocation);
+        drone.setDestination(resourceLocation);
+        alien.setDestination(drone.getCoordinates());
+
+    }
+
+    public static int getXSize() {
+        return xSize;
+    }
+    public static int getYSize() {
+        return ySize;
+    }
+
+    public boolean canGoUp() {
+        return drone.getCoordinates().getY() >= 1;
+    }
+    public boolean canGoDown() {
+        return drone.getCoordinates().getY() <= 4;
+    }
+    public boolean canGoLeft() {
+        return drone.getCoordinates().getX() >= 1;
+    }
+    public boolean canGoRight() {
+        return drone.getCoordinates().getX() <= 4;
+    }
+
+
+    public void moveDrone(int direction) {
+        switch (direction) {
+            case 0: {   //UP
+                drone.getCoordinates().setCoordinates(drone.getCoordinates().getX(), drone.getCoordinates().getY() - 1);
+            } break;
+            case 1: {   //DOWN
+                drone.getCoordinates().setCoordinates(drone.getCoordinates().getX(), drone.getCoordinates().getY() + 1);
+            } break;
+            case 2: {   //RIGHT
+                drone.getCoordinates().setCoordinates(drone.getCoordinates().getX() + 1, drone.getCoordinates().getY());
+            } break;
+            case 3: {   //LEFT
+                drone.getCoordinates().setCoordinates(drone.getCoordinates().getX() - 1, drone.getCoordinates().getY());
+            } break;
+            default: System.out.println("Invalid drone movement direction");
+        }
+
+        alien.setDestination(drone.getCoordinates());
+        alien.move();
+        setAlienX(alien.getCoordinates().getX());
+        setAlienY(alien.getCoordinates().getY());
+        if(checkProximity())
+            System.out.println("\n\n////////////////////FIGHT////////////////////");
+        while(checkProximity())
+            fight();
+        if(!drone.returning && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
+            drone.setDestination(landingLocation);
+            drone.returning = true;
+            System.out.println(resourceColor + " resource picked");
+        }
+        if(drone.returning && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
+            Singleton.getInstance().terminateExploration(true);
+            success = true;
+            terminate();
+        }
+    }
+
+
+    public boolean checkProximity() {
+        boolean test = (Math.abs(drone.getCoordinates().getX() - alien.getCoordinates().getX()) <= 1 &&
+                Math.abs(drone.getCoordinates().getY() - alien.getCoordinates().getY()) <= 1);
+
+        System.out.println(test);
+        return test;
+    }
+
+    public void fight() {
+        if(alien.attack(drone)) {
+            if(!drone.getHit(1)) {
+                System.out.println("\nDrone ded!, returning to mothership");
+                Singleton.getInstance().terminateExploration(false);
+                success = false;
+                terminate();
+            } else {
+                System.out.println("Drone hit! Current hp: " + drone.getHp());
+            }
+        } else {
+            System.out.println("Alien missed its attack!");
+        }
+        if(alien.getAttacked(drone)) {
+            System.out.println("\nAlien ded!");
+            System.out.println("////////////////////FIGHT////////////////////\n\n");
+            alien.setDed(true);
+            alien = AlienFactory.getRandomAlien(
+                    Singleton.getInstance().getCurrentPlanet().hasBlack(),
+                    Singleton.getInstance().getCurrentPlanet().hasBlue(),
+                    Singleton.getInstance().getCurrentPlanet().hasGreen(),
+                    Singleton.getInstance().getCurrentPlanet().hasRed());
+            setAlienX(alien.getCoordinates().getX());
+            setAlienY(alien.getCoordinates().getY());
+            setAlienColor(alien.getColor());
+            System.out.println("New " + getAlienColor() + " alien");
+        } else {
+            System.out.println("Drone missed its attack!");
+        }
+    }
+
+    void visualize() {
+        String result = "";
+        for(int i = 0; i < xSize; i++) {
+            for(int j = 0; j < ySize; j++) {
+                if(drone.getCoordinates().getX() == i && drone.getCoordinates().getY() == j)
+                    result += "D\t";
+                else if(alien.getCoordinates().getX() == i && alien.getCoordinates().getY() == j)
+                    result += "A\t";
+                else if(resourceLocation.getX() == i && resourceLocation.getY() == j)
+                    result += "R\t";
+                else if(landingLocation.getX() == i && landingLocation.getY() == j)
+                    result += "L\t";
+                else
+                    result += "#\t";
+            }
+            result += "\n";
+        }
+        System.out.println(result);
+    }
+
+    public Drone getDrone() {
+        return drone;
+    }
+
+    public Alien getAlien() {
+        return alien;
+    }
+
+    public Coordinates getLandingLocation() {
+        return landingLocation;
+    }
+
+    public Coordinates getResourceLocation() {
+        return resourceLocation;
+    }
+
+    private void terminate() {
+        if(success) {
+            int rand = Dice.roll();
+            if(resourceColor.compareTo("black") == 0)
+                Singleton.getInstance().getShip().addToBlackStorage(rand);
+            else if(resourceColor.compareTo("blue") == 0)
+                Singleton.getInstance().getShip().addToBlueStorage(rand);
+            else if(resourceColor.compareTo("green") == 0)
+                Singleton.getInstance().getShip().addToGreenStorage(rand);
+            else if(resourceColor.compareTo("red") == 0)
+                Singleton.getInstance().getShip().addToRedStorage(rand);
+            else if(resourceColor.compareTo("pink") == 0)
+                Singleton.getInstance().getShip().addArtefact();
+            else System.out.println("WRONG COLOR OF RESOURCE: " + resourceColor);
+        }
+        setRunning(false);
+    }
+}
