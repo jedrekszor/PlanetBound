@@ -1,114 +1,80 @@
 package jedrekszor.planetbound.logic.states;
 
+import jedrekszor.planetbound.logic.Logger;
 import jedrekszor.planetbound.logic.Singleton;
 import jedrekszor.planetbound.logic.data.exploration.Drone;
 import jedrekszor.planetbound.logic.data.planet.Planet;
 import jedrekszor.planetbound.logic.data.resources.ResourceFactory;
 
-public class BuyingUpgrades extends State{
+public class BuyingUpgrades extends StateAdapter{
     @Override
-    public State chooseShip(boolean isMilitary) {
-        System.out.println("Cannot choose ship, You already have a ship");
-        return Singleton.getInstance().getCurrentState();
-    }
-
-    @Override
-    public State drawPlanet() {
-        System.out.println("Cannot draw a planet");
-        return Singleton.getInstance().getCurrentState();
-    }
-
-    @Override
-    public State advance() {
-        System.out.println("Cannot advance");
-        return Singleton.getInstance().getCurrentState();
-    }
-
-    @Override
-    public State explore() {
-        System.out.println("Cannot explore");
-        return Singleton.getInstance().getCurrentState();
-    }
-
-    @Override
-    public void resolveEvent() {
-        System.out.println("No event to resolve");
-    }
-
-
-
-    @Override
-    public void serviceDrone() {
-        System.out.println("Servicing drone");
+    public State serviceDrone() {
+        Logger.log("Servicing drone");
         ResourceFactory.removeAllResources(1);
         Singleton.getInstance().getShip().getDrone().service();
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void upgradeCargo() {
-        System.out.println("Upgrading cargo");
+    public State upgradeCargo() {
+        Logger.log("Upgrading cargo");
         ResourceFactory.removeAllResources(2);
         Singleton.getInstance().getShip().addStorageLevel();
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void upgradeWeapons() {
-        System.out.println("Upgrading weapons");
+    public State upgradeWeapons() {
+        Logger.log("Upgrading weapons");
         ResourceFactory.removeAllResources(2);
         Singleton.getInstance().getShip().addWeaponsLevel();
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void buyDrone() {
-        System.out.println("Buying drone");
+    public State buyDrone() {
+        Logger.log("Buying drone");
         ResourceFactory.removeAllResources(2);
         Singleton.getInstance().getShip().setDrone(new Drone());
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void hireCrew() {
-        System.out.println("Hiring crew");
+    public State hireCrew() {
+        Logger.log("Hiring crew");
         ResourceFactory.removeAllResources(1);
         Singleton.getInstance().getShip().addCrew(1);
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void buyFuel() {
-        System.out.println("Buying fuel");
+    public State buyFuel() {
+        Logger.log("Buying fuel");
         ResourceFactory.removeParticularResources(true, false, true, true, 1);
         Singleton.getInstance().getShip().addFuel(1);
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void buyWeapon() {
-        System.out.println("Buying weapons");
+    public State buyWeapon() {
+        Logger.log("Buying weapons");
         ResourceFactory.removeParticularResources(true, true, false, false, 1);
         Singleton.getInstance().getShip().addWeapons();
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
-    public void buyShield() {
-        System.out.println("Buying shield");
+    public State buyShield() {
+        Logger.log("Buying shield");
         ResourceFactory.removeParticularResources(true, true, true, false, 1);
         Singleton.getInstance().getShip().addShields();
+        return Singleton.getInstance().getCurrentState();
     }
 
     @Override
     public State endShopping() {
-        System.out.println("Ending shopping");
+        Logger.log("Ending shopping");
         return Singleton.getInstance().getActionChoice();
-    }
-
-    @Override
-    public State lose() {
-        System.out.println("Have not lost yet");
-        return Singleton.getInstance().getCurrentState();
-    }
-
-    @Override
-    public State win() {
-        System.out.println("Have not won yet");
-        return Singleton.getInstance().getCurrentState();
     }
 
     @Override

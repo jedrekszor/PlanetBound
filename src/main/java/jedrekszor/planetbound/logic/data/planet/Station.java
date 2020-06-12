@@ -1,5 +1,7 @@
 package jedrekszor.planetbound.logic.data.planet;
 
-public class Station{
+import java.io.Serializable;
+
+public class Station implements Serializable {
     private boolean cargoUpgraded;
 }

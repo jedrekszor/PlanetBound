@@ -5,10 +5,11 @@ import javafx.beans.property.StringProperty;
 import javafx.scene.paint.Color;
 import jedrekszor.planetbound.logic.data.resources.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Planet {
+public abstract class Planet implements Serializable {
     private String color;
     private Station station;
     List<Resource> resources = new ArrayList<>();

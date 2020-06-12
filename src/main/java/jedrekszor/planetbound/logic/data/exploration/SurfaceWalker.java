@@ -1,6 +1,8 @@
 package jedrekszor.planetbound.logic.data.exploration;
 
-public abstract class SurfaceWalker {
+import java.io.Serializable;
+
+public abstract class SurfaceWalker implements Serializable {
     private Coordinates coordinates = new Coordinates();
     private Coordinates destination = new Coordinates();
     public boolean isFighting = false;

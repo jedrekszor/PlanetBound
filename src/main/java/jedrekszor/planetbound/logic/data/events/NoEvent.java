@@ -1,9 +1,11 @@
 package jedrekszor.planetbound.logic.data.events;
 
+import jedrekszor.planetbound.logic.Logger;
+
 public class NoEvent extends Event{
     @Override
     public void resolve() {
-        System.out.println("Nothing happens");
+        Logger.log("Nothing happens");
     }
 
     @Override

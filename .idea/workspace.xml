@@ -1,10 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PlanetBound:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="67ba4a10-2338-44ca-8a61-0d5ce060faef" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="67ba4a10-2338-44ca-8a61-0d5ce060faef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PlanetBound.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassRelationship" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StateDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/StateDiagram.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/ClassRelationship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/PackageDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/StateDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CargoLoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CargoLoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewDeath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewRescue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewRescue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/FuelLoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/FuelLoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/NoEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/NoEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/SalvageShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/SalvageShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Drone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Surface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Surface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Artefact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Artefact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlackResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlackResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlueResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlueResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/GreenResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/GreenResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/RedResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/RedResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ActionChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ActionChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/BuyingUpgrades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/BuyingUpgrades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ConvertingResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ConvertingResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Exploration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Exploration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/HandlingEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/HandlingEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Lost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Lost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ShipChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ShipChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Won.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Won.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ActionChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ActionChoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ShipChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ShipChoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/actionChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/actionChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/exploration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/exploration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/shipChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/shipChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/actionChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/actionChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/exploration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/exploration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CargoLoss.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CargoLoss.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CrewDeath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CrewDeath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CrewRescue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/CrewRescue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/FuelLoss.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/FuelLoss.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/NoEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/NoEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/SalvageShip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/events/SalvageShip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Coordinates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Drone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Drone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Surface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/Surface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/planet/Planet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/planet/Planet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/planet/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/planet/Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/Artefact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/Artefact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/BlackResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/BlackResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/BlueResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/BlueResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/GreenResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/GreenResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/RedResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/resources/RedResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/ship/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/data/ship/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ActionChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ActionChoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/BuyingUpgrades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/BuyingUpgrades.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ConvertingResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ConvertingResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Exploration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Exploration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/HandlingEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/HandlingEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Lost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Lost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ShipChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/ShipChoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Won.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/logic/states/Won.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/shipChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/shipChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ActionChoiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ExplorationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ShipChoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jedrekszor/planetbound/ui/ShipChoiceController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,136 +127,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Exploration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-              <folding>
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1215#1216#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#1647#1648#0" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1793#1794#0" expanded="true" />
-                <element signature="e#1854#1855#0" expanded="true" />
-                <element signature="e#1899#1900#0" expanded="true" />
-                <element signature="e#1959#1960#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Singleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ActionChoiceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3520">
-              <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/WinLoseScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewDeath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Planet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-              <folding>
-                <element signature="e#1562#1563#0" expanded="true" />
-                <element signature="e#1596#1597#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/BluePlanet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -150,266 +134,29 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getFuel</find>
-    </findStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/BlackPlanet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/BluePlanet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/GreenPlanet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/RedPlanet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/PlanetFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Planet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CargoLoss.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewRescue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/NoEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/SalvageShip.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/exploration.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Coordinates.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/AlienFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/BlackAlien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/BlueAlien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/GreenAlien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/RedAlien.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/successExploration.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/failureExploration.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Drone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/ResourceFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/HandlingEventController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlackResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlueResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/GreenResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/RedResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Artefact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationScreenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ActionChoiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewDeath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/FuelLoss.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/winScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/WinLoseScreenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ActionChoice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Exploration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/BuyingUpgrades.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ConvertingResources.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/HandlingEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Lost.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ShipChoice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Won.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Surface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/State.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Singleton.java" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1clUB17yQ1MA7YSP8OaUDoO7nEU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="exploration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="exploration" type="462c0819:PsiDirectoryNode" />
-              <item name="aliens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="planet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="ship" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlanetBound" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlanetBound" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="planetbound" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../planet-bound" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.37471265" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -456,599 +203,74 @@
       <workItem from="1589760252640" duration="9000" />
       <workItem from="1589975113354" duration="6147000" />
       <workItem from="1590235683140" duration="62000" />
+      <workItem from="1591102537018" duration="111000" />
+      <workItem from="1591102761602" duration="18000" />
+      <workItem from="1591103036782" duration="4000" />
+      <workItem from="1591792680450" duration="3979000" />
+      <workItem from="1591804646972" duration="1343000" />
+      <workItem from="1591809860469" duration="480000" />
+      <workItem from="1591817741864" duration="3605000" />
+      <workItem from="1591876342966" duration="3152000" />
+      <workItem from="1591887413400" duration="7820000" />
+      <workItem from="1591906353530" duration="1906000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66450000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21885157" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24702059" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java</url>
-          <line>368</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java</url>
-          <line>372</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java</url>
-          <line>374</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/SalvageShip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="18" column="103" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/exploration.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Coordinates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/BlackAlien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/BlueAlien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/GreenAlien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/RedAlien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/successExploration.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="273" selection-start-line="9" selection-start-column="273" selection-end-line="9" selection-end-column="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/failureExploration.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CargoLoss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/HandlingEventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Drone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/Alien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlackResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/BlueResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/GreenResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/RedResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/Artefact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/FuelLoss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/FightingAlien.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/ship/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="373" column="42" selection-start-line="373" selection-start-column="42" selection-end-line="373" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3359#3360#0" expanded="true" />
-            <element signature="e#3396#3397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/EventFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/aliens/AlienFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/PlanetFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/winScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="270" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jedrekszor/planetbound/loseScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="272" selection-start-line="8" selection-start-column="272" selection-end-line="8" selection-end-column="272" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Dice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Won.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/resources/ResourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/Surface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="178" column="103" lean-forward="true" selection-start-line="178" selection-start-column="103" selection-end-line="178" selection-end-column="103" />
-          <folding>
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="method#visualize#0;class#Surface#0" />
-            <element signature="e#9013#9014#0" expanded="true" />
-            <element signature="e#9041#9042#0" expanded="true" />
-            <element signature="e#9072#9073#0" expanded="true" />
-            <element signature="e#9100#9101#0" expanded="true" />
-            <element signature="e#9147#9148#0" expanded="true" />
-            <element signature="e#9185#9186#0" expanded="true" />
-            <element signature="e#9233#9234#0" expanded="true" />
-            <element signature="e#9272#9273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ActionChoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-          <folding>
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Lost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="82" column="25" lean-forward="true" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1604#1605#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/BuyingUpgrades.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ConvertingResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/ShipChoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/HandlingEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/states/Exploration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ActionChoiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3520">
-          <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/ExplorationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/ui/WinLoseScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/events/CrewDeath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/planet/BluePlanet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/data/exploration/SurfaceWalker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jedrekszor/planetbound/logic/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1591898970302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591898970302" />
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591907194602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591907194602" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1591102777778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591102777778" />
+    <state width="1877" height="545" key="GridCell.Tab.0.bottom" timestamp="1591908261235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="545" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591908261235" />
+    <state width="1877" height="545" key="GridCell.Tab.0.center" timestamp="1591908261235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="545" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591908261235" />
+    <state width="1877" height="545" key="GridCell.Tab.0.left" timestamp="1591908261235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="545" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591908261235" />
+    <state width="1877" height="545" key="GridCell.Tab.0.right" timestamp="1591908261235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="545" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591908261235" />
+    <state width="1877" height="531" key="GridCell.Tab.1.bottom" timestamp="1591879497959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="531" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591879497959" />
+    <state width="1877" height="531" key="GridCell.Tab.1.center" timestamp="1591879497959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="531" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591879497959" />
+    <state width="1877" height="531" key="GridCell.Tab.1.left" timestamp="1591879497959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="531" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591879497959" />
+    <state width="1877" height="531" key="GridCell.Tab.1.right" timestamp="1591879497959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="531" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591879497959" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1591907215181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591907215181" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591900688534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591900688534" />
   </component>
 </project>

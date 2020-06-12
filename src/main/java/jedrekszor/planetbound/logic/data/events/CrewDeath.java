@@ -1,5 +1,6 @@
 package jedrekszor.planetbound.logic.data.events;
 
+import jedrekszor.planetbound.logic.Logger;
 import jedrekszor.planetbound.logic.Singleton;
 
 public class CrewDeath extends Event{
@@ -7,7 +8,7 @@ public class CrewDeath extends Event{
 //    move the ship crew die to the right one space”
     @Override
     public void resolve() {
-        System.out.println("Crew Death! A crew member is injured due to a system malfunction");
+        Logger.log("Crew Death! A crew member is injured due to a system malfunction");
         Singleton.getInstance().getShip().removeCrew(1);
         Singleton.getInstance().checkLose();
     }

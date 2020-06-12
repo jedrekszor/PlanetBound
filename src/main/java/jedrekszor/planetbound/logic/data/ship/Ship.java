@@ -11,26 +11,28 @@ import jedrekszor.planetbound.logic.Singleton;
 import jedrekszor.planetbound.logic.data.exploration.Drone;
 import jedrekszor.planetbound.logic.data.resources.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Ship {
+public abstract class Ship implements Serializable {
 
-    private BooleanProperty captain = new SimpleBooleanProperty();
-    private BooleanProperty navigationOfficer = new SimpleBooleanProperty();
-    private BooleanProperty landingParty = new SimpleBooleanProperty();
-    private BooleanProperty shieldsOfficer = new SimpleBooleanProperty();
-    private BooleanProperty weaponsOfficer = new SimpleBooleanProperty();
-    private BooleanProperty cargoOfficer = new SimpleBooleanProperty();
+    public transient BooleanProperty captain = new SimpleBooleanProperty();
+    public transient BooleanProperty navigationOfficer = new SimpleBooleanProperty();
+    public transient BooleanProperty landingParty = new SimpleBooleanProperty();
+    public transient BooleanProperty shieldsOfficer = new SimpleBooleanProperty();
+    public transient BooleanProperty weaponsOfficer = new SimpleBooleanProperty();
+    public transient BooleanProperty cargoOfficer = new SimpleBooleanProperty();
 
-    private IntegerProperty black = new SimpleIntegerProperty();
-    private IntegerProperty blue = new SimpleIntegerProperty();
-    private IntegerProperty green = new SimpleIntegerProperty();
-    private IntegerProperty red = new SimpleIntegerProperty();
+    public transient IntegerProperty black = new SimpleIntegerProperty();
+    public transient IntegerProperty blue = new SimpleIntegerProperty();
+    public transient IntegerProperty green = new SimpleIntegerProperty();
+    public transient IntegerProperty red = new SimpleIntegerProperty();
+    public transient IntegerProperty artefact = new SimpleIntegerProperty();
 
-    private IntegerProperty shields = new SimpleIntegerProperty();
-    private IntegerProperty weapons = new SimpleIntegerProperty();
-    private IntegerProperty fuel = new SimpleIntegerProperty();
+    public transient IntegerProperty shields = new SimpleIntegerProperty();
+    public transient IntegerProperty weapons = new SimpleIntegerProperty();
+    public transient IntegerProperty fuel = new SimpleIntegerProperty();
 
 
     public boolean hasCaptain() {
@@ -124,6 +126,15 @@ public abstract class Ship {
     public void setRed(int red) {
         this.red.set(red);
     }
+    public int getArtefact() {
+        return artefact.get();
+    }
+    public IntegerProperty artefactProperty() {
+        return artefact;
+    }
+    public void setArtefact(int artefact) {
+        this.artefact.set(artefact);
+    }
 
     public int getShields() {
         return shields.get();
@@ -197,6 +208,7 @@ public abstract class Ship {
         setBlue(0);
         setGreen(0);
         setRed(0);
+        setArtefact(0);
     }
 
     public boolean removeShields(int points) {
@@ -407,11 +419,9 @@ public abstract class Ship {
         return false;
     }
 
-    public int getArtefacts() {
-        return artefacts.size();
-    }
     public void addArtefact() {
         artefacts.add(new Artefact());
+        setArtefact(artefacts.size());
         Singleton.getInstance().checkWin();
     }
     public Drone getDrone() {

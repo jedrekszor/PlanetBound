@@ -1,11 +1,15 @@
 package jedrekszor.planetbound.logic.data.exploration;
 
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Drone extends SurfaceWalker{
     private final int maxHp = 6;
-    private IntegerProperty hp = new SimpleIntegerProperty();
+    public transient IntegerProperty hp = new SimpleIntegerProperty();
+    public transient BooleanProperty returning = new SimpleBooleanProperty();
+
     public int getHp() {
         return hp.get();
     }
@@ -15,10 +19,21 @@ public class Drone extends SurfaceWalker{
     public void setHp(int hp) {
         this.hp.setValue(hp);
     }
-    public boolean returning = false;
+
+
+    public boolean isReturning() {
+        return returning.get();
+    }
+    public BooleanProperty returningProperty() {
+        return returning;
+    }
+    public void setReturning(boolean returning) {
+        this.returning.set(returning);
+    }
 
     public Drone() {
         setHp(maxHp);
+        setReturning(false);
     }
 
     public int getMaxHp() {

@@ -1,6 +1,8 @@
 package jedrekszor.planetbound.logic.data.events;
 
-public abstract class Event {
+import java.io.Serializable;
+
+public abstract class Event implements Serializable {
     public abstract void resolve();
 
     @Override

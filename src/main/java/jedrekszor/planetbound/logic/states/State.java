@@ -5,14 +5,16 @@ import jedrekszor.planetbound.logic.data.exploration.Surface;
 import jedrekszor.planetbound.logic.data.planet.Planet;
 import jedrekszor.planetbound.logic.data.resources.Resource;
 
-public abstract class State {
+import java.io.Serializable;
+
+public abstract class State implements Serializable {
     public abstract State chooseShip(boolean isMilitary);
     public abstract State drawPlanet();
     public abstract State advance();
     public abstract State explore();
-    public abstract void resolveEvent();
+    public abstract State resolveEvent();
     public State checkWin() {   //remove
-        if(Singleton.getInstance().getShip().getArtefacts() == 5) {
+        if(Singleton.getInstance().getShip().getArtefact() == 5) {
             return Singleton.getInstance().getWon();
         }
         return Singleton.getInstance().getCurrentState();
@@ -24,14 +26,15 @@ public abstract class State {
         return Singleton.getInstance().getCurrentState();
     }
 //    public abstract void convertResource(Resource source, Resource destination);
-    public abstract void serviceDrone();
-    public abstract void upgradeCargo();
-    public abstract void upgradeWeapons();
-    public abstract void buyDrone();
-    public abstract void hireCrew();
-    public abstract void buyFuel();
-    public abstract void buyWeapon();
-    public abstract void buyShield();
+    public abstract State serviceDrone();
+    public abstract State upgradeCargo();
+    public abstract State upgradeWeapons();
+    public abstract State buyDrone();
+    public abstract State hireCrew();
+    public abstract State buyFuel();
+    public abstract State buyWeapon();
+    public abstract State buyShield();
+    public abstract State shop();
     public abstract State endShopping();
 
     public abstract State lose();   //remove

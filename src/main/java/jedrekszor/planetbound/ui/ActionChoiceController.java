@@ -14,9 +14,11 @@ import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import jedrekszor.planetbound.App;
+import jedrekszor.planetbound.logic.Logger;
 import jedrekszor.planetbound.logic.Singleton;
 import jedrekszor.planetbound.logic.data.ship.MiningShip;
 import jedrekszor.planetbound.logic.data.ship.Ship;
+import jedrekszor.planetbound.logic.states.Exploration;
 
 import java.io.IOException;
 
@@ -38,6 +40,7 @@ public class ActionChoiceController {
     @FXML Label blue;
     @FXML Label green;
     @FXML Label red;
+    @FXML Label artefact;
 
     @FXML Label drone;
     @FXML Label fuel;
@@ -46,7 +49,7 @@ public class ActionChoiceController {
 
     @FXML Button advanceB;
     @FXML Button exploreB;
-
+    @FXML Button shopB;
 
 
     @FXML Button buyShieldB;
@@ -65,8 +68,6 @@ public class ActionChoiceController {
     @FXML Button upgradeCargoB;
 
 
-
-
     @FXML Pane space;
     @FXML Pane converting;
     @FXML Pane upgrading;
@@ -78,9 +79,10 @@ public class ActionChoiceController {
     public void initialize() {
         singleton = Singleton.getInstance();
         ship = singleton.getShip();
+        bind();
+    }
 
-
-
+    private void bind() {
         ship.captainProperty().addListener(new ChangeListener<Boolean>() {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean t1) {
@@ -143,12 +145,19 @@ public class ActionChoiceController {
             }
         });
 
-//        ship.getDrone().hpProperty().addListener(new ChangeListener<Number>() {
-//            @Override
-//            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-//                drone.setText(t1 + "/" + ship.getDrone().getMaxHp());
-//            }
-//        });
+        ship.artefactProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                artefact.setText(t1 + "/5");
+            }
+        });
+
+        ship.getDrone().hpProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                drone.setText(t1 + "/" + ship.getDrone().getMaxHp());
+            }
+        });
         ship.fuelProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
@@ -191,7 +200,6 @@ public class ActionChoiceController {
     @FXML
     public void advance() {
         singleton.advance();
-        System.out.println(singleton);
         showStage("handlingEvent");
     }
 
@@ -199,11 +207,30 @@ public class ActionChoiceController {
     public void explore() {
         if(singleton.getShip().hasLandingParty()) {
             singleton.explore();
-            System.out.println(singleton);
             showStage("exploration");
         } else {
-            System.out.println("No landing party!");
+            Logger.log("No landing party!");
         }
+    }
+
+    public void save() {
+        singleton.save();
+    }
+
+    public void load() {
+        singleton.load();
+        singleton = Singleton.getInstance();
+        if(singleton.getCurrentState() instanceof Exploration)
+            showStage("exploration");
+        ship = singleton.getShip();
+        bind();
+    }
+
+    @FXML
+    public void shop() {
+        Singleton.getInstance().shop();
+        setVisible();
+        verifyBuying();
     }
 
     private void showStage(String name) {
@@ -230,6 +257,7 @@ public class ActionChoiceController {
         blue.setText(ship.getBlue() + "/" + ship.getStoragePerLevel() * ship.getStorageLevel());
         green.setText(ship.getGreen() + "/" + ship.getStoragePerLevel() * ship.getStorageLevel());
         red.setText(ship.getRed() + "/" + ship.getStoragePerLevel() * ship.getStorageLevel());
+        artefact.setText(ship.getArtefact() + "/5");
 
         if(ship.getDrone() != null)
             drone.setText(ship.getDrone().getHp() + "/" + ship.getDrone().getMaxHp());

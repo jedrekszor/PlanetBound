@@ -5,15 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import jedrekszor.planetbound.logic.Logger;
 
 
 import java.io.IOException;
+import java.time.Instant;
+import java.util.Date;
 
 public class App extends Application {
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
+        Logger.log("------------------------------------------------------------------------------------\nNew game: " + Date.from(Instant.now()));
         scene = new Scene(loadFXML("shipChoice"));
         stage.setScene(scene);
         stage.show();

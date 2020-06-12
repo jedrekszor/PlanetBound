@@ -1,6 +1,8 @@
 package jedrekszor.planetbound.logic.data.resources;
 
-public class Artefact implements Resource{
+import java.io.Serializable;
+
+public class Artefact implements Resource, Serializable {
     @Override
     public String getColor() {
         return "pink";

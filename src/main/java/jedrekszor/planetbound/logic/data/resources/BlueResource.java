@@ -1,6 +1,8 @@
 package jedrekszor.planetbound.logic.data.resources;
 
-public class BlueResource implements Resource{
+import java.io.Serializable;
+
+public class BlueResource implements Resource, Serializable {
     @Override
     public String getColor() {
         return "blue";

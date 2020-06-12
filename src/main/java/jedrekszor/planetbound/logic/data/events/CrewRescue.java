@@ -1,5 +1,6 @@
 package jedrekszor.planetbound.logic.data.events;
 
+import jedrekszor.planetbound.logic.Logger;
 import jedrekszor.planetbound.logic.Singleton;
 
 public class CrewRescue extends Event{
@@ -8,7 +9,7 @@ public class CrewRescue extends Event{
 //    one space if you have less than six crew”
     @Override
     public void resolve() {
-        System.out.println("Crew Rescue. You find a ship in distress with a lone crew member.");
+        Logger.log("Crew Rescue. You find a ship in distress with a lone crew member.");
         Singleton.getInstance().getShip().addCrew(1);
     }
 

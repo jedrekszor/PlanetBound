@@ -2,22 +2,25 @@ package jedrekszor.planetbound.logic.data.exploration;
 
 import javafx.beans.property.*;
 import jedrekszor.planetbound.logic.Dice;
+import jedrekszor.planetbound.logic.Logger;
 import jedrekszor.planetbound.logic.Singleton;
 import jedrekszor.planetbound.logic.data.exploration.aliens.Alien;
 import jedrekszor.planetbound.logic.data.exploration.aliens.AlienFactory;
 import jedrekszor.planetbound.logic.data.resources.Resource;
 import jedrekszor.planetbound.logic.data.resources.ResourceFactory;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Surface{
+public class Surface implements Serializable {
     private static int xSize = 6;
     private static int ySize = 6;
 
-    private IntegerProperty alienX = new SimpleIntegerProperty();
-    private IntegerProperty alienY = new SimpleIntegerProperty();
-    private StringProperty alienColor = new SimpleStringProperty();
+    public transient IntegerProperty alienX = new SimpleIntegerProperty();
+    public transient IntegerProperty alienY = new SimpleIntegerProperty();
+    public transient StringProperty alienColor = new SimpleStringProperty();
+    public transient StringProperty eventLog = new SimpleStringProperty();
 
     public int getAlienX() {
         return alienX.get();
@@ -49,7 +52,7 @@ public class Surface{
         this.alienColor.set(alienColor);
     }
 
-    private BooleanProperty running = new SimpleBooleanProperty();
+    public transient BooleanProperty running = new SimpleBooleanProperty();
     public boolean isRunning() {
         return running.get();
     }
@@ -68,6 +71,20 @@ public class Surface{
         this.resourceColor = resourceColor;
     }
 
+    public String getEventLog() {
+        return eventLog.get();
+    }
+    public StringProperty eventLogProperty() {
+        return eventLog;
+    }
+    public void setEventLog(String eventLog) {
+        this.eventLog.set(eventLog);
+    }
+    public void addToEventLog(String log) {
+        String currentLog = getEventLog();
+        setEventLog(currentLog + "\n" + log);
+    }
+
     private Drone drone;
     private Alien alien;
     private boolean success;
@@ -81,7 +98,7 @@ public class Surface{
     public Surface() {
         setRunning(true);
         drone = Singleton.getInstance().getShip().getDrone();
-        drone.returning = false;
+        drone.setReturning(false);
         alien = (AlienFactory.getRandomAlien(
                 Singleton.getInstance().getCurrentPlanet().hasBlack(),
                 Singleton.getInstance().getCurrentPlanet().hasBlue(),
@@ -91,13 +108,14 @@ public class Surface{
         setAlienX(alien.getCoordinates().getX());
         setAlienY(alien.getCoordinates().getY());
         setAlienColor(alien.getColor());
-        System.out.println("New " + getAlienColor() + " alien");
+        Logger.log("New " + getAlienColor() + " alien");
         setResourceColor(ResourceFactory.getRandomResource(Singleton.getInstance().getCurrentPlanet().hasBlack(),
                     Singleton.getInstance().getCurrentPlanet().hasBlue(),
                     Singleton.getInstance().getCurrentPlanet().hasGreen(),
                     Singleton.getInstance().getCurrentPlanet().hasRed(),
                     Singleton.getInstance().getCurrentPlanet().hasArtefact()).getColor());
-        System.out.println(resourceColor + " resource");
+        Logger.log(resourceColor + " resource");
+        setEventLog("");
     }
 
     private void setLocations() {
@@ -114,6 +132,10 @@ public class Surface{
         drone.setDestination(resourceLocation);
         alien.setDestination(drone.getCoordinates());
 
+    }
+
+    public void load() {
+        drone = Singleton.getInstance().getShip().getDrone();
     }
 
     public static int getXSize() {
@@ -151,7 +173,7 @@ public class Surface{
             case 3: {   //LEFT
                 drone.getCoordinates().setCoordinates(drone.getCoordinates().getX() - 1, drone.getCoordinates().getY());
             } break;
-            default: System.out.println("Invalid drone movement direction");
+            default: Logger.log("Invalid drone movement direction");
         }
 
         alien.setDestination(drone.getCoordinates());
@@ -159,15 +181,15 @@ public class Surface{
         setAlienX(alien.getCoordinates().getX());
         setAlienY(alien.getCoordinates().getY());
         if(checkProximity())
-            System.out.println("\n\n////////////////////FIGHT////////////////////");
+            Logger.log("\n////////////////////FIGHT////////////////////");
         while(checkProximity())
             fight();
-        if(!drone.returning && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
+        if(!drone.isReturning() && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
             drone.setDestination(landingLocation);
-            drone.returning = true;
-            System.out.println(resourceColor + " resource picked");
+            drone.setReturning(true);
+            Logger.log(resourceColor + " resource picked");
         }
-        if(drone.returning && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
+        if(drone.isReturning() && drone.getCoordinates().getX() == drone.getDestination().getX() && drone.getCoordinates().getY() == drone.getDestination().getY()) {
             Singleton.getInstance().terminateExploration(true);
             success = true;
             terminate();
@@ -178,27 +200,29 @@ public class Surface{
     public boolean checkProximity() {
         boolean test = (Math.abs(drone.getCoordinates().getX() - alien.getCoordinates().getX()) <= 1 &&
                 Math.abs(drone.getCoordinates().getY() - alien.getCoordinates().getY()) <= 1);
-
-        System.out.println(test);
         return test;
     }
 
     public void fight() {
         if(alien.attack(drone)) {
             if(!drone.getHit(1)) {
-                System.out.println("\nDrone ded!, returning to mothership");
+                addToEventLog("Drone dead!, returning to mothership\"");
+                Logger.log("\nDrone ded!, returning to mothership");
                 Singleton.getInstance().terminateExploration(false);
                 success = false;
                 terminate();
             } else {
-                System.out.println("Drone hit! Current hp: " + drone.getHp());
+                addToEventLog("Drone hit! Current hp: " + drone.getHp());
+                Logger.log("Drone hit! Current hp: " + drone.getHp());
             }
         } else {
-            System.out.println("Alien missed its attack!");
+            Logger.log("Alien missed its attack!");
+            addToEventLog("Alien missed its attack!");
         }
         if(alien.getAttacked(drone)) {
-            System.out.println("\nAlien ded!");
-            System.out.println("////////////////////FIGHT////////////////////\n\n");
+            Logger.log("\nAlien ded!");
+            addToEventLog("Alien dead!\n\n----------------------------");
+            Logger.log("////////////////////END FIGHT////////////////////");
             alien.setDed(true);
             alien = AlienFactory.getRandomAlien(
                     Singleton.getInstance().getCurrentPlanet().hasBlack(),
@@ -208,9 +232,10 @@ public class Surface{
             setAlienX(alien.getCoordinates().getX());
             setAlienY(alien.getCoordinates().getY());
             setAlienColor(alien.getColor());
-            System.out.println("New " + getAlienColor() + " alien");
+            Logger.log("New " + getAlienColor() + " alien");
         } else {
-            System.out.println("Drone missed its attack!");
+            Logger.log("Drone missed its attack!");
+            addToEventLog("Drone missed its attack!");
         }
     }
 
@@ -231,7 +256,6 @@ public class Surface{
             }
             result += "\n";
         }
-        System.out.println(result);
     }
 
     public Drone getDrone() {
@@ -263,7 +287,7 @@ public class Surface{
                 Singleton.getInstance().getShip().addToRedStorage(rand);
             else if(resourceColor.compareTo("pink") == 0)
                 Singleton.getInstance().getShip().addArtefact();
-            else System.out.println("WRONG COLOR OF RESOURCE: " + resourceColor);
+            else Logger.log("WRONG COLOR OF RESOURCE: " + resourceColor);
         }
         setRunning(false);
     }

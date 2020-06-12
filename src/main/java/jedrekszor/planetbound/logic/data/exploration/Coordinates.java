@@ -3,9 +3,11 @@ package jedrekszor.planetbound.logic.data.exploration;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class Coordinates {
-    private IntegerProperty x = new SimpleIntegerProperty();
-    private IntegerProperty y = new SimpleIntegerProperty();
+import java.io.Serializable;
+
+public class Coordinates implements Serializable {
+    public transient IntegerProperty x = new SimpleIntegerProperty();
+    public transient IntegerProperty y = new SimpleIntegerProperty();
 
     public IntegerProperty xProperty() {
         return x;

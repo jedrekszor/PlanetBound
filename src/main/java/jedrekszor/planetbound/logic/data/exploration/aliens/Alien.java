@@ -26,7 +26,7 @@ public abstract class Alien extends SurfaceWalker {
     public abstract boolean attack(Drone d);
     public abstract boolean getAttacked(Drone d);
 
-    private BooleanProperty ded = new SimpleBooleanProperty();
+    public transient BooleanProperty ded = new SimpleBooleanProperty();
     public boolean isDed() {
         return ded.get();
     }
